@@ -10,15 +10,15 @@ The RealTimeEventNotifierAPI is a Node.js-based event notification system that a
 - **Event Logging:** Completed events are logged to a `events.json` file for historical tracking.
 - **Overlapping Event Detection:** Flags events that have the same start time.
 
-
+```
 API Endpoints
 1. POST /events
-Create a new event.
 
+Create a new event.
 Request Body
 json
 Copy code
-```{
+{
     "title": "Event Title",
     "description": "Event Description",
     "time": "2024-12-10T15:00:00Z"
