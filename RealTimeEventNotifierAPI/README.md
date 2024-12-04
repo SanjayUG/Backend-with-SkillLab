@@ -18,11 +18,11 @@ Create a new event.
 Request Body
 json
 Copy code
-{
+```{
     "title": "Event Title",
     "description": "Event Description",
     "time": "2024-12-10T15:00:00Z"
-}
+}```
 title: The title of the event (required).
 description: A short description of the event (required).
 time: The time of the event in ISO 8601 format (required).
