@@ -29,7 +29,7 @@ time: The time of the event in ISO 8601 format (required).
 Response
 json
 Copy code
-{
+```{
     "message": "Event created successfully",
     "event": {
         "title": "Event Title",
@@ -38,14 +38,14 @@ Copy code
         "notified": false,
         "overlaps": false
     }
-}
+}```
 2. GET /events
 Get a list of all upcoming events.
 
 Response
 json
 Copy code
-[
+```[
     {
         "title": "Event Title",
         "description": "Event Description",
@@ -53,7 +53,7 @@ Copy code
         "notified": false,
         "overlaps": false
     }
-]
+]```
 WebSocket Server
 The WebSocket server is running on port 8090. Once connected, clients will receive notifications 5 minutes before an event begins.
 
@@ -73,13 +73,13 @@ Example of the events.json log file:
 
 json
 Copy code
-[
+```[
     {
         "timestamp": "2024-12-10T15:05:00Z",
         "title": "Event Title",
         "description": "Event Description"
     }
-]
+]```
 Technologies Used
 Node.js: Backend runtime environment.
 Express.js: Web framework for Node.js.
